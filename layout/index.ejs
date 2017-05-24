@@ -1,0 +1,69 @@
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <%- partial('_partial/intro' , {}, {cache: true}) %>
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <%- partial('_partial/headerlogo'  , {}, {cache: true}) %>
+        <!-- Header 头部logo end -->
+        <!-- Nav 导航条 start -->
+        <%- partial('_partial/nav' , {}, {cache: true} ) %>
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        <% if( (page.current === 1) && (is_home()) ) { %>
+        <!-- Main-first -->
+            <%- partial('_partial/mainfirst' , {}, {cache: true} ) %>
+
+        <% } %>
+        <!-- 文章列表   s -->
+        <section class="link_container">
+            <div class="link_row">
+                <!-- 文章sample  s-->
+
+                <% page.posts.each(function (post) { %> 
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                        <div class="page_title" style="background-image: url(<%= post.thumbnail %>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <a href="<%- url_for(post.path) %>"><h2 class="page_title_text"> <%= post.title %> </h2></a>
+                            <!--段落-->
+                        </div>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data"><%- date(post.date, "YYYY-MM-DD") %></span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/"><%- list_categories(post.categories, {
+                                show_count: false,
+                                class: 'post_category',
+                                style: 'none'
+                            }) %></a>                              
+                            </h6>
+
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
+            <% }) %>
+            </div>
+        </section>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <%- partial('_partial/footer', {}, {cache: true}) %>
+
+        <!-- footer  页码 end-->
+        <!-- Copyright 版权 start -->
+        <%- partial('_partial/copyright' , {}, {cache: true}) %>
+        <!-- Copyright 版权 end -->
+    </div>
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts -->
+</body>

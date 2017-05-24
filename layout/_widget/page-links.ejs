@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="/css/item.css" />
+
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <%- partial('_partial/headerlogo') %>
+        <!-- Nav 导航条 start -->
+        <%- partial('_partial/nav') %>
+        <%- partial('_partial/mainfirst') %>
+
+        <section class="special">
+                            <div class="row">
+                                <% if (site.data.links) { %>
+        <% for (var i in site.data.links) { %>
+                                <section class="4u 6u(medium) 12u$(xsmall) item">
+                                <div class="item">
+                                    <div><img src="<%= site.data.links[i].avatar %>" ; width="150px"  ; height="150px" ; /></div>
+                                    <h3><%= i %></h3>
+                                    <p style="text-align: center; margin-top: -1rem;"><%= site.data.links[i].descr %></p>
+                                </div>
+                                </section>
+        <% } %>
+    <% } %>
+                            </div>
+                    
+        </section>
+        <!-- Copyright 版权 start -->
+        <%- partial('_partial/copyright') %>
+    </div>
+</body>

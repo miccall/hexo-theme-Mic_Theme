@@ -1,0 +1,98 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Head info
+head:
+    favicon: "/img/logo_miccall.png"
+    high_res_favicon: "/img/logo_miccall.png"
+    apple_touch_icon: "/img/logo_miccall.png"
+    keywords: miccall
+
+Intro:
+    name: MICCALL
+    slogan: "Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way"
+    HeadButton: MICCALL
+
+Nav:
+    Home_name: 主页
+    is_use_categories : true 
+    categories_name: 分类
+    is_use_archives : false
+    archives_name: 归档
+    icon:
+        github: 
+            use: true
+            link: https://github.com/miccall
+        Twitter:
+            use: false
+            link: 
+        Facebook:
+            use: false
+            link: 
+        Instagram:
+            use: false
+            link:
+    pages:
+        简历: 
+            link: "/about/"
+        团队 :
+            link: "/group/"
+        图库 :
+            link: "/gallery/"
+        标签:
+            link: "/tag/"
+        #自定义标签名
+        #   link：“路径”
+
+
+MainFirst:
+    name: Miccall Metro
+    description: Welcome to my Blog  
+    pic_url: /images/me.jpg
+    goto_ulr: ""
+Gallery :
+    title: Mr.metro 
+    description: Just another fine responsive 
+
+# ---------------------------------------------------------------
+# Style Settings
+# ---------------------------------------------------------------
+
+
+# Custom Fonts
+fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "FZLTCXHJW", Arial, sans-serif
+
+# Comment Systems
+# Available value of "use":
+#     duoshuo | disqus | disqus_click | changyan
+comment:
+    use: disqus_click
+    shortname: http-miccall-tech 
+    duoshuo_thread_key_type: path
+    duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+    changyan_appid:
+    changyan_conf:
+    changyan_thread_key_type: path
+
+# Search Systems
+# Available value:
+#     swiftype | google | local
+search:
+    use: google
+    swiftype_key: Just another fine responsive  
+    
+
+# Leancloud Views
+leancloud:
+    enable: false
+    app_id: #你的 app_id
+    app_key: #你的 app_key
+    av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
+
+# Busuanzi 不蒜子 Views
+busuanzi:
+    enable: true
+    all_site_uv: true
+    post_pv: true
+    busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"

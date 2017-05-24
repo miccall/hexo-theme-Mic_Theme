@@ -1,0 +1,64 @@
+<nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="<%= config.root %>" rel="nofollow"><%- theme.Nav.Home_name %></a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        <% if(theme.Nav.is_use_categories === true) { %>
+	        <li class="active">
+	            <a href="#s1"><%- theme.Nav.categories_name %></a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <%- list_categories({
+	                            show_count: false,
+	                            amount: 5,
+	                            style: 'none',
+	                            separator: '</li><li>'
+	                        }) %>
+	                    </ul>
+	        </li>
+	        <% } %>
+	        <!-- archives  归档   --> 
+	        <% if(theme.Nav.is_use_archives === true) { %>
+	        <li class="active">
+	            <a href="#s1"><%- theme.Nav.archives_name %></a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <%- list_archives({
+	                            show_count: false,
+	                            amount: 5,
+	                            style: 'none',
+	                            separator: '</li><li>'
+	                        }) %>
+	                    </ul>
+	        </li>
+	        <% } %>
+	        
+		        <!-- Pages 自定义   -->
+		        <% for (var i in theme.Nav.pages){ %>
+		        <li>
+		            <a href="<%= theme.Nav.pages[i].link %>" title="<%= i %>">
+		                <%= i %>
+		            </a>
+		        </li>
+		        <% } %>
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            <% if(theme.Nav.icon.github.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.github.link %>" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Facebook.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Facebook.link %>" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Instagram.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Instagram.link %>" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Twitter.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Twitter.link %>#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		            <% } %>
+			</ul>
+</nav>

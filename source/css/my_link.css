@@ -1,0 +1,272 @@
+.container{
+    margin-top: -2rem;
+}
+
+.cover-name-link{
+    text-decoration:none;
+    border-bottom:0px;
+    text-align: center;
+}
+.cover-name a{
+    text-decoration:none;
+    font-size: 18px;
+}
+.grid-site,
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.cfix {
+    zoom: 1;
+}
+
+.cfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.project-cover {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    float: left;
+    margin: 0 22px 22px 0;
+    position: relative;
+    width: 202px
+}
+
+.project-cover,
+.project-cover * {
+    box-sizing: border-box
+}
+
+.project-cover .cover-img-el {
+    transform: translate(0, 0);
+    transition: opacity .15s linear
+}
+
+.project-cover .cover-img,
+.project-cover .cover-img-el {
+    width: 202px;
+    height: 158px;
+    border-radius: 3px 3px 0 0
+}
+
+.project-cover .cover-img {
+    display: block;
+    overflow: hidden;
+    position: relative
+}
+
+.project-cover .cover-info {
+    background: #fff;
+    padding: 6px 10px 28px
+}
+
+.project-cover .cover-name {
+    font-weight: bold;
+    height: 32px;
+    margin: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-cover .cover-name-link {
+    color: #2b2b2b
+}
+
+.project-cover .cover-fields a:hover,
+.project-cover .cover-fields span:hover {
+    color: #171717;
+    text-decoration: none
+}
+
+
+.cover-by-link {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.cover-by {
+    color: dimgray;
+    margin-right: 5px
+}
+
+.cover-by-link {
+    color: #2b2b2b;
+}
+
+.cover-by-link a {
+    color: #2b2b2b;
+    text-align: center;
+}
+
+#content {
+    margin: 46px auto 0;
+    max-width: 1546px;
+    padding-bottom: 115px
+}
+
+.project-cover {
+    float: left
+}
+
+
+@media (min-width: 1638px) {
+    #content,
+    #filter-crumbs {
+        width: 1546px
+    }
+    .project-cover:nth-child(7n) {
+        margin-right: 0
+    }
+}
+
+
+
+@media (min-width: 1414px) and (max-width: 2600px) {
+    #content,
+    #filter-crumbs {
+        width: 1322px
+    }
+    .project-cover:nth-child(6n) {
+        margin-right: 0
+    }
+}
+
+
+@media (min-width: 1190px) and (max-width: 1413px) {
+    #content,
+    #filter-crumbs {
+        width: 1098px
+    }
+    .project-cover:nth-child(5n) {
+        margin-right: 0
+    }
+}
+
+
+@media (min-width: 966px) and (max-width: 1189px) {
+    #content,
+    #filter-crumbs {
+        width: 874px
+    }
+    .project-cover:nth-child(4n) {
+        margin-right: 0
+    }
+}
+
+@media (min-width: 742px) and (max-width: 965px) {
+    #content,
+    #filter-crumbs {
+        width: 650px
+    }
+    .project-cover:nth-child(3n) {
+        margin-right: 0
+    }
+}
+
+
+@media (min-width: 518px) and (max-width: 741px) {
+
+    #content,
+    #filter-crumbs
+    {
+        width: 426px
+    }
+    .project-cover:nth-child(2n) {
+        margin-right: 0
+    }
+}
+
+
+@media (min-width: 604px) and (max-width: 1024px) {
+    .grid-site,
+    .project-view {
+        max-width: none
+    }
+    .ie9 .basement-open-animate-in #top-panel {
+        padding-left: 34.5161%
+    }
+}
+
+
+@media (max-width: 517px) {
+    .project-cover {
+        border-radius: 0;
+        float: none;
+        margin: 0 auto 8px;
+        padding: 0;
+        position: relative;
+        width: 100%
+    }
+    .project-cover .cover-img,
+    .project-cover .cover-info-stats {
+        float: left
+    }
+    .project-cover .cover-img,
+    .project-cover .cover-img-el {
+        border-radius: 0;
+        vertical-align: bottom
+    }
+    .project-cover .cover-img {
+        height: auto;
+        min-height: 100px;
+        width: 45%
+    }
+    .project-cover .cover-info-stats {
+        width: 55%
+    }
+
+    .project-cover .cover-img-el {
+        height: auto;
+        width: 100%
+    }
+    .project-cover .cover-name {
+        height: auto;
+        margin-bottom: 0;
+        max-height: 32px
+    }
+    .project-cover .cover-by,
+    .project-cover .cover-name-link {
+        color: #3c3c3c
+    }
+    .project-cover .cover-by-link {
+        max-width: 80%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .project-cover .cover-info {
+        font-size: 12px;
+        height: auto
+    }
+    #content-container,
+    #filter-crumbs {
+        padding: 0 15px
+    }
+}
+
+@media (min-width: 300px) and (max-width: 517px) {
+
+    .cover-info-stats{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .cover-name a{
+        font-size: 17px;
+    }
+    .cover-info-stats.cover-by-link a{
+        text-align: center;
+    }
+    .project-cover .cover-name {
+        margin-bottom: 5px
+    }
+}
+

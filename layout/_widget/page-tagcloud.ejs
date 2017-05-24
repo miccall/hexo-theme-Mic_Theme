@@ -1,0 +1,42 @@
+
+<link rel="stylesheet" href="/css/item.css" />
+<style >
+    .row a{
+        border-bottom: none;
+    }
+    .special{
+        padding: 0;
+        padding: 2rem;
+    }
+</style>
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <%- partial('_partial/headerlogo') %>
+        <!-- Nav 导航条 start -->
+        <%- partial('_partial/nav') %>
+        <%- partial('_partial/mainfirst') %>
+
+        <section class="special">
+                            <div class="row" style="border-bottom: none;">
+
+        <%- tagcloud({
+            min_font: 16,
+            max_font: 17,
+            amount: 9999,
+            color: false,
+            start_color: '#757575',
+            end_color: '#212121',
+        }) %>
+
+                            </div>
+                    
+        </section>
+
+        <!-- Copyright 版权 start -->
+        <%- partial('_partial/copyright') %>
+    </div>
+</body>

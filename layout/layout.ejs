@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<% if(page.layout === 'gallery') { %>
+		<%- partial('_partial/gallery_head', {}, {cache: true}) %>
+	<% } else { %>
+			<%- partial('_partial/head', {}, {cache: true}) %>
+			<%- partial('_partial/importJS', {}, {cache: true}) %>
+	<% } %>
+</head>
+    <% if(page.layout === 'gallery') { %>
+        <!-- Single Gallery Page -->
+        <%- partial('_widget/page-gallery', {}, {cache: true}) %>
+        
+    <% } else { %>
+		<%- body %>
+ 	<% } %>
+</html>

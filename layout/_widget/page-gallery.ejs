@@ -1,0 +1,51 @@
+
+<body class="is-loading-0 is-loading-1 is-loading-2">
+		<!-- Main -->
+			<div id="gallery_main">
+
+				<!-- Header -->
+					<header id="gallery_header">
+						<h1><%- config.title %></h1>
+						<p><%-theme.Gallery.description %>    author : <a href="<%- config.root%>" style="border-bottom: none;"><%- config.author%></a></p>
+						<ul class="gallery_icons">
+		            <% if(theme.Nav.icon.github.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.github.link %>" class="gallery_icon fa-github"><span class="label">GitHub</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Facebook.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Facebook.link %>" class="gallery_icon fa-facebook"><span class="label">Facebook</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Instagram.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Instagram.link %>" class="gallery_icon fa-instagram"><span class="label">Instagram</span></a></li>
+		            <% } %>
+		            <% if(theme.Nav.icon.Twitter.use === true) { %>
+		                <li><a href="<%= theme.Nav.icon.Twitter.link %>#" class="gallery_icon fa-twitter"><span class="label">Twitter</span></a></li>
+		            <% } %>
+						</ul>
+					</header>
+
+				<!-- Thumbnail -->
+					<section id="gallery_thumbnails">
+		           <% if (site.data.gallery) { %>
+		                <% for (var i in site.data.gallery) { %>					
+								<article>
+									<a class="thumbnail" href="<%= site.data.gallery[i].full_link %>" data-position="left center"><img src="<%= site.data.gallery[i].full_link %>" alt="" /></a>
+									<h2><%= i %></h2>
+									<p><%= site.data.gallery[i].descr %></p>
+								</article>
+			                <% } %>
+			            <% } %>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+						</ul>
+					</footer>
+
+			</div>
+			<%- partial('_partial/gallery_js', {}, {cache: true}) %>
+
+	</body>
