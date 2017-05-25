@@ -45,12 +45,12 @@ Nav:
         #自定义标签名
         #   link：“路径”
 
-
 MainFirst:
     name: Miccall Metro
     description: Welcome to my Blog  
     pic_url: /images/me.jpg
     goto_ulr: ""
+
 Gallery :
     title: Mr.metro 
     description: Just another fine responsive 
@@ -59,6 +59,10 @@ Gallery :
 # Style Settings
 # ---------------------------------------------------------------
 
+# Custom code Render System 
+# default dark funky okaidia twilight coy solarized 
+# link to review : http://prismjs.com/index.html
+prism: okaidia
 
 # Custom Fonts
 fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "FZLTCXHJW", Arial, sans-serif
