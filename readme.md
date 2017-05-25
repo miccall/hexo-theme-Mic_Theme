@@ -76,7 +76,12 @@
         #   link：“路径”
 使用方法 ： 
  - 创建「about」页面
+   在站点根的source目录 新建一个abou目录 这个文件目录与 link 后的目录所对应 
+   在里面创建一个md文件 在此创作 
  - 创建「group」页面
+    在站点根的source目录 新建一个group目录 这个文件目录与 link 后的目录所对应
+    在里面创建一个md文件 命名index formatter里面 layout: links 
+    然后 在站点根的source目录 _data
  - 创建「gallery」页面
  - 创建「tag」页面
  
@@ -130,9 +135,9 @@ Open sourced under the GPL v3.0 license.
 
 
 
-  [1]: http://onh0umlhz.bkt.clouddn.com/0524themetitle.PNG
-  [2]: https://html5up.net/
-  [3]: http://miccall.tech/
-  [4]: http://onh0umlhz.bkt.clouddn.com/0524theme002.PNG
+  [1]: 
+  [2]: 
+  [3]: 
+  [4]: 
   [5]: http://onh0umlhz.bkt.clouddn.com/0524theme003.PNG
   [6]: http://onh0umlhz.bkt.clouddn.com/0524theme004.PNG

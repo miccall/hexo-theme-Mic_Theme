@@ -29,14 +29,18 @@
         <!-- Nav 导航条 start -->
         <%- partial('_partial/nav' , {}, {cache: true}) %>
 
-        <div id="main">
+        <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url(<%= page.thumbnail %>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#"><h2 ><%= page.title %></h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ><%= page.title %></h2></a>
             </div>
             <!-- Post -->
-            <div class="post-content">
+            <div class="post-content" style="padding: 4rem 4rem 2rem 4rem ;" >
                 <%-page.content%>
              </div>
+
+            <!-- Post Comments -->
+            <%- partial('_partial/comment') %>
+
         </div>
         <!-- Copyright 版权 start -->
         <%- partial('_partial/copyright', {}, {cache: true} ) %>
