@@ -1425,7 +1425,7 @@
 
 			#main > * {
 				background-color: #ffffff;
-				padding: 2rem 1.5rem 0.1rem 1.5rem ;
+				padding: 0.5rem 1rem 0.1rem 1rem ;
 			}
 
 		}
@@ -4355,7 +4355,10 @@
 			.post-content{
 				padding: -10rem;
 			}
-		}	
+		}
+	.post-content {
+		padding: 4rem 4rem 2rem 4rem ;
+	}
 	.post-content hr{
 		height: 0px;
 
@@ -4434,11 +4437,17 @@
 	}
 
 	@media screen and (max-width: 820px) {
+		.post-content{
+			padding: 1rem;
+		}
 		.post_page_title_img a{
 			padding-top: 30%;
 		}
 	}
 	@media screen and (max-width: 600px) {
+		.post-content{
+			padding: 1rem;
+		}
 		.post_page_title_img a{
 			padding-top: 40%;
 		}
