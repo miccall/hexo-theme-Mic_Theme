@@ -17,7 +17,7 @@
 
 <!--  代码渲染  -->
 <link rel="stylesheet" href="/css/prism_<%= theme.prism %>.css" />
-
+<link rel="stylesheet" href="/css/typo.css" />
 <!-- 文章页 -->
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
@@ -34,9 +34,9 @@
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ><%= page.title %></h2></a>
             </div>
             <!-- Post -->
-            <div class="post-content" >
+            <div class="typo" style="padding: 3rem;">
                 <%-page.content%>
-             </div>
+            </div>
 
             <!-- Post Comments -->
             <%- partial('_partial/comment') %>
