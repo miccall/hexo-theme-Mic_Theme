@@ -59,9 +59,9 @@ Gallery :
 # Style Settings
 # ---------------------------------------------------------------
 
-# Custom code Render System 
-# default dark funky okaidia twilight coy solarized 
-# link to review : http://prismjs.com/index.html
+# Custom code Render System 自定义代码渲染 
+# default dark funky okaidia twilight coy solarized  可选项  
+# link to review : http://prismjs.com/index.html   官网预览
 prism: okaidia
 
 # Custom Fonts
