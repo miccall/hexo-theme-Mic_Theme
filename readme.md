@@ -1,6 +1,6 @@
 ---
 # Miccall Theme
-###### version 1.0.6
+###### version 1.0.8
 ---
 ![title](http://onh0umlhz.bkt.clouddn.com/0524themetitle.PNG)
 ## Contents 目录
@@ -14,7 +14,7 @@
 
 ## General概括
 
-主题开发 套用了大量的[HTML5 UP][2] 模板 因为作者是前端小白 css功底菜鸡
+- 主题开发 套用了大量的[HTML5 UP][2] 模板 因为作者是前端小白 css功底菜鸡
 在此鸣谢支持我的各位大佬
 
 ## Demo 演示
@@ -36,53 +36,54 @@
 以下内容均为主题的配置文件 " _config.yml " (请区别于站点的配置文件)
 
 - head:      
-- - favicon : 网站的logo
-- - high_res_favicon : 高清头像
-- - apple_touch_icon :   高清头像
-- - keywords : 关键字
+-  favicon : 网站的logo
+-  high_res_favicon : 高清头像
+-  apple_touch_icon :   高清头像
+-  keywords : 关键字
 
 - Intro: 主题刚开始加载的界面   
-- - name  :  名字
-- - slogan  :  第二标语
-- - HeadButton  :  主页按钮名字
+-  name  :  名字
+-  slogan  :  第二标语
+-  HeadButton  :  主页按钮名字
 
 - Nav: 导航栏  
-- - Home_name: 主页名字
-- - is_use_categories : 是否启用分类  (true false)
-- - categories_name: 分类名字
-- - is_use_archives : 是否启用归档  (true false)
-- - archives_name: 归档名字
-- - icon:  导航栏上的图标
-- - -   github:
-- - - -     use: true   是否启用
-- - - -     link: 点击地址
-- - -  Twitter:
-- - - -     use: false
-- - - -      link:
-- - -   Facebook:
-- - - -    use: false
-- - - -      link:
-- - -   Instagram:
-- - - -      use: false
-- - - -      link:
-- -  pages:  自定义连接页
-- - -       简历:
-- - -        link: "/about/"  link 的参数为相对路径，对应 hexo 目录下的 source 文件夹内的相应文件夹。
-- - -    团队 :
-- - - -       link: "/group/"
-- - -  图库 :
-- - - -         link: "/gallery/"
-- - -   标签:
-- - - -     link: "/tag/"
+-  Home_name: 主页名字
+-  is_use_categories : 是否启用分类  (true false)
+-  categories_name: 分类名字
+-  is_use_archives : 是否启用归档  (true false)
+-  archives_name: 归档名字
+-  icon:  导航栏上的图标
+-     github:
+-      use: true   是否启用
+-      link: 点击地址
+-      Twitter:
+-            use: false
+-          link:
+-    Facebook:
+-   use: false
+-      link:
+-      Instagram:
+-       use: false
+-       link:
+-   pages:  自定义连接页
+-      简历:
+-        link: "/about/"  link 的参数为相对路径，对应 hexo 目录下的 source 文件夹内的相应文件夹。
+-     团队 :
+-        link: "/group/"
+-  图库 :
+-         link: "/gallery/"
+-    标签:
+-      link: "/tag/"
             自定义标签名
             link：“路径”
 
 使用方法 ：
+
 - 创建「about」页面
-- -  在站点根目录的 source 目录，新建一个about目录 。这个文件目录与 link属性 后的目录所对应，在里面创建一个 index.md 文件 , 在此创作 ablout内容 。
+- 在站点根目录的 source 目录，新建一个about目录 。这个文件目录与 link属性 后的目录所对应，在里面创建一个 index.md 文件 , 在此创作 ablout内容 。
 
 - 创建「group」页面
-- - 在站点根目录的 source目录，新建一个group目录 这个文件目录与 link属性 后的目录所对应
+- 在站点根目录的 source目录，新建一个group目录 这个文件目录与 link属性 后的目录所对应
     ，在里面创建一个index.md 文件, fort-matter里面添加属性
 
 ```
@@ -178,6 +179,30 @@ leancloud:
     all_site_uv: true   全局启用 
     post_pv: true   单独文章启用 
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+
+
+- 开始创作你的文章: 
+文章目录在 souice目录 的 _post目录下 以md格式文件的文章页 
+新建一个md文件 格式为
+
+```
+		---
+
+		title: 文章标题  
+		date: 2017/3/27 13:48:25  文章发表时间 
+		tags: 
+		- 标签1
+		- 标签2 ( 可选 )
+		categories: Algorithm  分类
+		thumbnail: https://xxxxxxxxxx.png    略缩图 
+		（更多请访问hexo官网 ）
+		---
+
+		---
+		。。。 文章正文 
+
+```
+
 
 ## Contributing 贡献
  欢迎各种形式的贡献，包括但不限于优化，添加功能，文档 & 代码的改进，问题和 bugs 的报告。期待您的 Pull Request。
