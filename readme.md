@@ -80,7 +80,7 @@
 使用方法 ：
 
 - 创建「about」页面
-- 在站点根目录的 source 目录，新建一个about目录 。这个文件目录与 link属性 后的目录所对应，在里面创建一个 index.md 文件 , 在此创作 ablout内容 。
+- 在站点根目录的 source 目录，新建一个about目录 。这个文件目录与 link属性 后的目录所对应，在里面创建一个 index.md 文件 , 在此创作 about内容 。
 
 - 创建「group」页面
 - 在站点根目录的 source目录，新建一个group目录 这个文件目录与 link属性 后的目录所对应
