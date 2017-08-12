@@ -62,7 +62,7 @@ Gallery :
 # Custom code Render System 自定义代码渲染 
 # default dark funky okaidia twilight coy solarized  可选项  
 # link to review : http://prismjs.com/index.html   官网预览
-prism: solarized
+prism: coy
 
 # Custom Fonts
 fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "FZLTCXHJW", Arial, sans-serif

@@ -35,45 +35,45 @@
 ## Docs 文档
 以下内容均为主题的配置文件 " _config.yml " (请区别于站点的配置文件)
 
-- head:      
--  favicon : 网站的logo
--  high_res_favicon : 高清头像
--  apple_touch_icon :   高清头像
--  keywords : 关键字
+head:      
+  favicon : 网站的logo
+  high_res_favicon : 高清头像
+  apple_touch_icon :   高清头像
+  keywords : 关键字
 
-- Intro: 主题刚开始加载的界面   
--  name  :  名字
--  slogan  :  第二标语
--  HeadButton  :  主页按钮名字
+ Intro: 主题刚开始加载的界面   
+  name  :  名字
+  slogan  :  第二标语
+  HeadButton  :  主页按钮名字
 
-- Nav: 导航栏  
--  Home_name: 主页名字
--  is_use_categories : 是否启用分类  (true false)
--  categories_name: 分类名字
--  is_use_archives : 是否启用归档  (true false)
--  archives_name: 归档名字
--  icon:  导航栏上的图标
--     github:
--      use: true   是否启用
--      link: 点击地址
--      Twitter:
--            use: false
--          link:
--    Facebook:
--   use: false
--      link:
--      Instagram:
--       use: false
--       link:
--   pages:  自定义连接页
--      简历:
--        link: "/about/"  link 的参数为相对路径，对应 hexo 目录下的 source 文件夹内的相应文件夹。
--     团队 :
--        link: "/group/"
--  图库 :
--         link: "/gallery/"
--    标签:
--      link: "/tag/"
+ Nav: 导航栏  
+  Home_name: 主页名字
+  is_use_categories : 是否启用分类  (true false)
+  categories_name: 分类名字
+  is_use_archives : 是否启用归档  (true false)
+  archives_name: 归档名字
+  icon:  导航栏上的图标
+     github:
+      use: true   是否启用
+      link: 点击地址
+      Twitter:
+            use: false
+          link:
+    Facebook:
+    use: false
+      link:
+      Instagram:
+       use: false
+       link:
+   pages:  自定义连接页
+      简历:
+        link: "/about/"  link 的参数为相对路径，对应 hexo 目录下的 source 件夹内的相应文件夹。
+     团队 :
+        link: "/group/"
+  图库 :
+         link: "/gallery/"
+    标签:
+      link: "/tag/"
             自定义标签名
             link：“路径”
 
@@ -102,7 +102,7 @@
 ```
 多的也参照这种格式。
 - 创建「gallery」页面
-- - 在站点根目录的 source目录，新建一个gallery目录 这个文件目录与 link属性 后的目录所对应 ，在里面创建一个index.md 文件, fort-matter里面添加属性
+ 在站点根目录的 source目录，新建一个gallery目录 这个文件目录与 link属性 后的目录所对应 ，在里面创建一个index.md 文件, fort-matter里面添加属性
 
 ```
     ---
@@ -123,7 +123,7 @@
 多的也参照这种格式。
 
 - 创建「tag」页面
-- - 在站点根目录的 source目录，新建一个tag目录 这个文件目录与 link属性 后的目录所对应
+ 在站点根目录的 source目录，新建一个tag目录 这个文件目录与 link属性 后的目录所对应
     ，在里面创建一个index.md 文件, fort-matter里面添加属性
 
 ```
@@ -137,30 +137,30 @@
 ok 回到配置文件
 
 - MainFirst: 导航栏下面的主页
-- -     name: 大标题 名字
-- -     description: 第二标签 描述   
-- -     pic_url: 图片地址
-- -     goto_ulr: 点击跳转
+     name: 大标题 名字
+    description: 第二标签 描述   
+     pic_url: 图片地址
+     goto_ulr: 点击跳转
 
 
-- Gallery :  图库页
-- -     title: 标题  
-- -    description: 描述
+ Gallery :  图库页
+     title: 标题  
+    description: 描述
 
 字体文件 不建议修改
 
-- 评论系统
-- comment:
-- -    use: disqus_click
-- -    shortname: http-miccall-tech
-- -  duoshuo_thread_key_type: path
-- -   duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
-- - changyan_appid:
-- -     changyan_conf:
-- -   changyan_thread_key_type: path
+ 评论系统
+ comment:
+   use: disqus_click
+   shortname: http-miccall-tech
+  duoshuo_thread_key_type: path
+   duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
+ changyan_appid:
+     changyan_conf:
+   changyan_thread_key_type: path
 
 
-- 搜索系统
+搜索系统
   search:
     use: google
     swiftype_key: Just another fine responsive  
@@ -172,7 +172,7 @@ leancloud:
     app_key: #你的 app_key
     av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
 
-- 访问量系统
+访问量系统
   Busuanzi 不蒜子 Views
   busuanzi:
     enable: true   是否开启
@@ -202,6 +202,10 @@ leancloud:
 		。。。 文章正文 
 
 ```
+
+### 代码高亮
+  
+  安装组件 参阅 http://github.com/ele828/hexo-prism-plugin
 
 
 ## Contributing 贡献
