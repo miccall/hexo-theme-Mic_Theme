@@ -1,0 +1,49 @@
+@charset "UTF-8"; 
+
+/*homepage backgroud  css */
+	body.homepage {
+	    background-color: #120d21;
+	    margin: 0px;
+	}
+	@keyframes copycat {
+	    from {
+	        transform: scale(1);
+	    }
+	    to {
+	        transform: scale(1.22);
+	    }
+	}
+	body.homepage > .overlay {
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    height: 100vh;
+	    width: 100vw;
+	    overflow: hidden;
+	}
+	body.homepage > .overlay::before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    height: 100vh;
+	    width: 100vw;
+	    background-image: url("../../images/bg.jpg");
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    animation: copycat 10s forwards ease-out;
+	}
+	body.homepage section {
+
+	    background: none;
+	}
+
+
+
+
+
+
+
+
