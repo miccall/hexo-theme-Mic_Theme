@@ -32,6 +32,7 @@
 /* Wrapper */
 
 	#wrapper {
+		transform: none;
 		padding: 1rem;
 		-moz-transition: opacity 0.5s ease;
 		-webkit-transition: opacity 0.5s ease;
@@ -49,22 +50,16 @@
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/bg.jpg");
-			background-position: center 0; 
-			background-repeat: no-repeat; 
-			background-attachment:fixed; 
-			background-size: cover; 
-			-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
-			-o-background-size: cover;/* 兼容Opera */ 												scroll;
+			background-image :url("../../images/bg.jpg") ;
+background-position: center 0; 
+background-repeat: no-repeat; 
+background-attachment:fixed; 
+background-size: cover; 
+-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
+-o-background-size: cover;/* 兼容Opera */ 
+zoom: 1; 
 			z-index: -1;
 		}
-
-			#wrapper > .bg.fixed {
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-			}
-
 		#wrapper.fade-in:before {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
