@@ -29,6 +29,7 @@
 		-webkit-text-size-adjust: none;
 	}
 
+
 /* Wrapper */
 
 	#wrapper {
@@ -51,13 +52,13 @@
 			height: 100%;
 			background-color: #212931;
 			background-image :url("../../images/bg.jpg") ;
-background-position: center 0; 
-background-repeat: no-repeat; 
-background-attachment:fixed; 
-background-size: cover; 
--webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
--o-background-size: cover;/* 兼容Opera */ 
-zoom: 1; 
+			background-position: center; 
+			background-repeat: no-repeat; 
+			background-attachment:fixed; 
+			background-size: cover; 
+			-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
+			-o-background-size: cover;/* 兼容Opera */ 
+			zoom: 1; 
 			z-index: -1;
 		}
 		#wrapper.fade-in:before {
@@ -4348,6 +4349,10 @@ zoom: 1;
 	}
 
 /* post-contant */
+.typo a{
+	border-bottom: 0;
+	color: red;
+}
 		@media screen and (max-width: 480px) {
 			.post-content{
 				padding: -10rem;
