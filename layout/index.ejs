@@ -40,20 +40,13 @@
                                     <!-- Category -->
                                     <span>
                             <h6>
-                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/"><%- list_categories(post.categories, {
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                <%- list_categories(post.categories, {
                                 show_count: false,
                                 class: 'post_category',
                                 style: 'none'
                             }) %></a>
                             </h6>
-                            <h6>
-                            <a class="post_tag-link" href="http://localhost:4000/tags/"><%- list_tags(post.tags, {
-                                show_count: false,
-                                class: 'post_tag',
-                                style: 'none'
-                                }) %></a>
-                            </h6>
-
                         </span>
                                 </div>
                             </div>
