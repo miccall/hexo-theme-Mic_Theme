@@ -22,14 +22,16 @@
             <div class="link_row">
                 <!-- 文章sample  s-->
 
-                <% page.posts.each(function (post) { %> 
+                <% page.posts.each(function (post) { %>
                 <div class="6u 12u(narrower)">
                     <section class="link_box special">
+                       <a href="<%- url_for(post.path) %>">
                         <div class="page_title" style="background-image: url(<%= post.thumbnail %>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
                             <!--标题-->
-                            <a href="<%- url_for(post.path) %>"><h2 class="page_title_text"> <%= post.title %> </h2></a>
+                            <h2 class="page_title_text"> <%= post.title %> </h2>
                             <!--段落-->
                         </div>
+                        </a>
                         <div class="home-post-info">
                             <!-- Author Avatar -->
                             <div class="home-post-info-author-avatar">
@@ -42,7 +44,14 @@
                                 show_count: false,
                                 class: 'post_category',
                                 style: 'none'
-                            }) %></a>                              
+                            }) %></a>
+                            </h6>
+                            <h6>
+                            <a class="post_tag-link" href="http://localhost:4000/tags/"><%- list_tags(post.tags, {
+                                show_count: false,
+                                class: 'post_tag',
+                                style: 'none'
+                                }) %></a>
                             </h6>
 
                         </span>
