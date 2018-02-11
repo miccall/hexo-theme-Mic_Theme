@@ -1,6 +1,6 @@
 ---
 # Miccall Theme
-###### version 1.1.0
+###### version 1.1.2
 ---
 ![title](http://onh0umlhz.bkt.clouddn.com/0524themetitle.PNG)
 
