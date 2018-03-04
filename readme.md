@@ -1,8 +1,7 @@
----
-# Miccall Theme
-###### version 1.1.2
----
-![title](http://onh0umlhz.bkt.clouddn.com/0524themetitle.PNG)
+# Miccall Theme Readme
+###### version 1.2.0
+
+<img src="http://onh0umlhz.bkt.clouddn.com/githubhexothemereadmemain.png" width="100%" />
 
 ## Contents 目录
 
@@ -19,48 +18,66 @@
 在此鸣谢支持我的各位大佬
 
 ## Demo 演示
-！[miccall.tech](http://miccall.tech)
 
-![此处输入图片的描述](http://onh0umlhz.bkt.clouddn.com/0524theme002.PNG)
+个人网站 : [miccall.tech](http://miccall.tech)
 
-![此处输入图片的描述](http://onh0umlhz.bkt.clouddn.com/0524theme003.PNG)
-
-![此处输入图片的描述](http://onh0umlhz.bkt.clouddn.com/0524theme004.PNG)
+主题文章列表: 
+<img src="http://onh0umlhz.bkt.clouddn.com/githubhexothemereadmesecond.png" width="100%" />
+主题文章主页: 
+<img src="http://onh0umlhz.bkt.clouddn.com/githubhexothemereadmepost.png" width="100%" />
+主题图库页: 
+<img src="http://onh0umlhz.bkt.clouddn.com/githubhexothemereadmegallery.png" width="100%" />
 
 ## Quick start 快速开始
 
 - 请仔细阅读 Hexo 的官方文档，完成对 Hexo 的[安装](https://hexo.io/zh-cn/docs/index.html#%E5%AE%89%E8%A3%85)和[基本的配置](https://hexo.io/zh-cn/docs/configuration.html)。
+
 - 下载本主题并且放置于`themes`目录下，更改主题名字，并在站点根目录的配置文件`_config.yml`中启用该主题。
 
-    ```
+```
     # Extensions
     ## Plugins: https://hexo.io/plugins/
     ## Themes: https://hexo.io/themes/
     theme: miccall
-    ```
+
+```
 - 在主题的配置文件`_config.yml`中修改相应的值。
 
 ## Docs 文档
 
 以下内容均为主题的配置文件 `_config.yml`内容（请区别于站点的配置文件）。
 
+##### 一 . head标签下 
+
+1.网站的logo 
+    **favicon:** "/img/logo_miccall.png"
+
+2.搜索的关键字 :
+keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
+可以为网页提供多个关键词，多个关键词应该使用空格分开；
+不要给网页定义过多的关键词，最好保持在10个以下，过多的关键词，搜索引擎将忽略；
+不要给网页定义与网页描述内容无关的关键词；
+由于网页制作者滥用keywords(提供过多的关键词或者提供与网页无关的关键词)，导致目前常用的搜索引擎降低了keywords的重要性。
+    **keywords:** miccall
+
+3.主页背景图片：默认链接是在主站以下目录的 "img/bg.jpg" 就代表"miccall.tech/img/bg.jpg" 暂不支持外链
+    **backgroundpic :** "img/bg.jpg"
 
 
-```
-# Head info
+##### 二 . Intro: 主题刚开始加载的界面
+    
+1.名字 
+    **name:** MICCALL
 
-head:
-    favicon: "/img/logo_miccall.png" # 网站的logo
-    high_res_favicon: "/img/logo_miccall.png" # 高清头像
-    apple_touch_icon: "/img/logo_miccall.png" # 高清头像
-    keywords: miccall # 关键字
+2.第二标语
+    **slogan:** "Whatever is worth doing is worth doing well I'll think of you every step of the way"
 
-Intro: # 主题刚开始加载的界面
-    name: MICCALL # 名字
-    slogan: "Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way" # 第二标语
-    HeadButton: MICCALL # 主页按钮名字
+3.主页按钮上面的文字     
+    **HeadButton:** MICCALL
 
-Nav: # 导航栏
+##### 三 .Nav: 导航栏
+
+```    
     Home_name: 主页 # 主页名字
     is_use_categories : true # 是否启用分类
     categories_name: 分类 # 分类名字

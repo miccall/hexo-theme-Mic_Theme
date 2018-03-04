@@ -5,9 +5,8 @@
 # Head info
 head:
     favicon: "/img/logo_miccall.png"
-    high_res_favicon: "/img/logo_miccall.png"
-    apple_touch_icon: "/img/logo_miccall.png"
     keywords: miccall
+    backgroundpic : "img/bg.jpg"
 
 Intro:
     name: MICCALL

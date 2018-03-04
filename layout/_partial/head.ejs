@@ -1,4 +1,3 @@
-
     <title>
     <%-config.title %>
     </title>
@@ -6,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="<%- config.root %>css/mic_main.css" />
     <link rel="stylesheet" href="<%- config.root %>css/dropdownMenu.css" />
+    <meta name="keywords" content="<%- theme.head.keywords %>" />
     <% if (theme.busuanzi.enable === true ) {%>
     	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	<% } %>
+	 <% } %>
     <noscript>
         <link rel="stylesheet" href="<%- config.root %>css/noscript.css" />
     </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('<%- config.root %><%- theme.head.backgroundpic%>') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
