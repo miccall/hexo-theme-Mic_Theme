@@ -50,7 +50,7 @@
 ##### 一 . head标签下 
 
 1.网站的logo 
-    **favicon:** "/img/logo_miccall.png"
+- **favicon:** "/img/logo_miccall.png"
 
 2.搜索的关键字 :
 keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
@@ -58,22 +58,22 @@ keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
 不要给网页定义过多的关键词，最好保持在10个以下，过多的关键词，搜索引擎将忽略；
 不要给网页定义与网页描述内容无关的关键词；
 由于网页制作者滥用keywords(提供过多的关键词或者提供与网页无关的关键词)，导致目前常用的搜索引擎降低了keywords的重要性。
-    **keywords:** miccall
+- **keywords:** miccall
 
 3.主页背景图片：默认链接是在主站以下目录的 "img/bg.jpg" 就代表"miccall.tech/img/bg.jpg" 暂不支持外链
-    **backgroundpic :** "img/bg.jpg"
+- **backgroundpic :** "img/bg.jpg"
 
 
 ##### 二 . Intro: 主题刚开始加载的界面
     
 1.名字 
-    **name:** MICCALL
+- **name:** MICCALL
 
 2.第二标语
-    **slogan:** "Whatever is worth doing is worth doing well I'll think of you every step of the way"
+- **slogan:** "Whatever is worth doing is worth doing well I'll think of you every step of the way"
 
 3.主页按钮上面的文字     
-    **HeadButton:** MICCALL
+- **HeadButton:** MICCALL
 
 ##### 三 .Nav: 导航栏
 
