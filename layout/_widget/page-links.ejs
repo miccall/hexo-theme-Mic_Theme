@@ -1,5 +1,125 @@
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/demo.css">
+<style type="text/css">
+    .our-team {
+        padding: 30px 0 40px;
+        background: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
 
-<link rel="stylesheet" href="/css/item.css" />
+    .our-team .pic {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .our-team .pic:before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.2;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .pic:before {
+        height: 100%;
+    }
+
+    .our-team .pic:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .our-team .pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .pic img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+    }
+
+    .our-team .team-content {
+        margin-bottom: 30px;
+    }
+
+    .our-team .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #4e5052;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+
+    .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #000;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social {
+        bottom: 0;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+    }
+
+    .our-team .social li a {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .our-team .social li a:hover {
+        color: #110;
+        background: #f7f5ec;
+    }
+
+    @media only screen and (max-width: 990px) {
+        .our-team {
+            margin-bottom: 30px;
+        }
+    }</style>
 
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
@@ -8,27 +128,37 @@
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <%- partial('_partial/headerlogo') %>
-        <!-- Nav 导航条 start -->
-        <%- partial('_partial/nav') %>
-        <%- partial('_partial/mainfirst') %>
-
-        <section class="special">
+            <!-- Nav 导航条 start -->
+            <%- partial('_partial/nav') %>
+                <%- partial('_partial/mainfirst') %>
+                    <div class="demo">
+                        <div class="container">
                             <div class="row">
                                 <% if (site.data.links) { %>
-        <% for (var i in site.data.links) { %>
-                                <section class="4u 6u(medium) 12u$(xsmall) item">
-                                <div class="item">
-                                    <div><img src="<%= site.data.links[i].avatar %>" ; width="150px"  ; height="150px" ; /></div>
-                                    <a href="<%= site.data.links[i].link%>"><h3><%= i %></h3></a>
-                                    <a style="text-align: center; margin-top: -1rem;"><%= site.data.links[i].descr %></a>
-                                </div>
-                                </section>
-        <% } %>
-    <% } %>
+                                    <% for (var i in site.data.links) { %>
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 30px">
+                                            <div class="our-team">
+                                                <div class="pic">
+                                                    <img src="<%= site.data.links[i].avatar %>">
+                                                </div>
+                                                <div class="team-content">
+                                                    <h3 class="title"><%= i %></h3>
+                                                    <Span class="post"><%= site.data.links[i].descr %></Span>
+                                                </div>
+                                                <ul class="social">
+                                                    <li><a href="<%= site.data.links[i].link%>" class="fa fa-link"></a></li>
+                                                    <li><a href="<%= site.data.links[i].qq%>" class="fa fa-qq"></a></li>
+                                                    <li><a href="<%= site.data.links[i].wachat%>" class="fa fa-wechat"></a></li>
+                                                    <li><a href="<%= site.data.links[i].weibo%>" class="fa fa-weibo"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <% } %>
+                                            <% } %>
                             </div>
-                    
-        </section>
-        <!-- Copyright 版权 start -->
-        <%- partial('_partial/copyright') %>
+                        </div>
+                    </div>
+                    <!-- Copyright 版权 start -->
+                    <%- partial('_partial/copyright') %>
     </div>
 </body>
