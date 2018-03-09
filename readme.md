@@ -266,6 +266,7 @@ keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
 - 更改了画廊中图片为居中及缩放(已更新)
 - 主页上会显示categories而不显示tag(涉及到排版问题，没有采用)
 - 感谢 [@sli1989](https://github.com/sli1989) 的贡献 ： 修复了主页 me.jpg的设置问题 (已更新)
+- 感谢 [@ver217](https://github.com/ver217) 的贡献, 支持了 mathjax. 
 
 ## License 许可证
 
