@@ -1,5 +1,5 @@
-<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/demo.css">
 <style type="text/css">
     .our-team {
@@ -146,10 +146,18 @@
                                                     <Span class="post"><%= site.data.links[i].descr %></Span>
                                                 </div>
                                                 <ul class="social">
-                                                    <li><a href="<%= site.data.links[i].link%>" class="fa fa-link"></a></li>
-                                                    <li><a href="<%= site.data.links[i].qq%>" class="fa fa-qq"></a></li>
-                                                    <li><a href="<%= site.data.links[i].wachat%>" class="fa fa-wechat"></a></li>
-                                                    <li><a href="<%= site.data.links[i].weibo%>" class="fa fa-weibo"></a></li>
+                                                    <% if (site.data.links[i].link != null) { %>
+                                                        <li><a href="<%= site.data.links[i].link%>" class="fa fa-link"></a></li>
+                                                    <%}%>
+                                                    <% if (site.data.links[i].qq != null) { %>
+                                                        <li><a href="<%= site.data.links[i].qq%>" class="fa fa-qq"></a></li>
+                                                    <%}%>
+                                                    <% if (site.data.links[i].wachat != null) { %>
+                                                        <li><a href="<%= site.data.links[i].wachat%>" class="fa fa-wechat"></a></li>
+                                                    <%}%>
+                                                    <% if (site.data.links[i].weibo != null) { %>
+                                                        <li><a href="<%= site.data.links[i].weibo%>" class="fa fa-weibo"></a></li>
+                                                    <%}%>
                                                 </ul>
                                             </div>
                                         </div>
