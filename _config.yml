@@ -19,19 +19,12 @@ Nav:
     categories_name: 分类
     is_use_archives : false
     archives_name: 归档
+    
+    #Social
+    # for more icons, please see http://fontawesome.io/icons/#brand
     icon:
-        github: 
-            use: true
-            link: https://github.com/miccall
-        Twitter:
-            use: false
-            link: 
-        Facebook:
-            use: false
-            link: 
-        Instagram:
-            use: false
-            link:
+        github: https://github.com/staunchkai
+        
     pages:
         简历: 
             link: "/about/"
