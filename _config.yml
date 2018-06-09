@@ -63,13 +63,24 @@ fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB"
 # Available value of "use":
 #     duoshuo | disqus | disqus_click | changyan
 comment:
-    use: disqus_click
+    use: valine
     shortname: http-miccall-tech 
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
     changyan_appid:
     changyan_conf:
     changyan_thread_key_type: path
+    # 使用 valine 请先执行 npm install valine --save
+    valine: # Valine Comment System https://github.com/xCss/Valine
+       on: true
+       appId: 'your appId'
+       appKey: 'your appkey'
+       notify: true
+       verify: false
+       placeholder: Please leave your footprints
+       avatar: ''
+       avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
+       pageSize: 10 # comments of one page
 
 # Search Systems
 # Available value:
