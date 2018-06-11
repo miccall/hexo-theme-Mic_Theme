@@ -266,6 +266,10 @@ keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
 - 更改了画廊中图片为居中及缩放(已更新)
 - 主页上会显示categories而不显示tag(涉及到排版问题，没有采用)
 - 感谢 [@sli1989](https://github.com/sli1989) 的贡献 ： 修复了主页 me.jpg的设置问题 (已更新)
+- 感谢 [@staunchkai](https://github.com/staunchkai)的贡献 : 1. 添加 Valine 评论 
+- 2. 导航栏社交图标自定义 
+- 感谢 [@acupt](https://github.com/acupt)的贡献 ：1、修复了https网站引用 ‘bootstrap.min.css’ 和 ‘font-awesome.min.css’ 文件错误的问题
+- 2、links.yml不配置属性link/qq/wachat/weibo则不显示图标
 
 ## License 许可证
 

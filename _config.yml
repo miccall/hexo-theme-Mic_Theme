@@ -23,7 +23,8 @@ Nav:
     #Social
     # for more icons, please see http://fontawesome.io/icons/#brand
     icon:
-        github: https://github.com/staunchkai
+        github: https://github.com/miccall
+        500px: http://500px.com
         
     pages:
         简历: 
