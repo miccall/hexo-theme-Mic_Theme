@@ -8,18 +8,13 @@
 						<h1><%- config.title %></h1>
 						<p><%-theme.Gallery.description %>    author : <a href="<%- config.root%>" style="border-bottom: none;"><%- config.author%></a></p>
 						<ul class="gallery_icons">
-		            <% if(theme.Nav.icon.github.use === true) { %>
-		                <li><a href="<%= theme.Nav.icon.github.link %>" class="gallery_icon fa-github"><span class="label">GitHub</span></a></li>
-		            <% } %>
-		            <% if(theme.Nav.icon.Facebook.use === true) { %>
-		                <li><a href="<%= theme.Nav.icon.Facebook.link %>" class="gallery_icon fa-facebook"><span class="label">Facebook</span></a></li>
-		            <% } %>
-		            <% if(theme.Nav.icon.Instagram.use === true) { %>
-		                <li><a href="<%= theme.Nav.icon.Instagram.link %>" class="gallery_icon fa-instagram"><span class="label">Instagram</span></a></li>
-		            <% } %>
-		            <% if(theme.Nav.icon.Twitter.use === true) { %>
-		                <li><a href="<%= theme.Nav.icon.Twitter.link %>#" class="gallery_icon fa-twitter"><span class="label">Twitter</span></a></li>
-		            <% } %>
+		                    <% for (var i in theme.Nav.icon) { %>
+		                    <li>
+		                        <a title="<%= i %>" href="<%- url_for(theme.Nav.icon[i]) %>" target="_blank" rel="noopener">
+		                            <i class="icon fa fa-<%= i %>"></i>
+		                        </a>
+		                    </li>
+		                    <% } %>
 						</ul>
 					</header>
 
