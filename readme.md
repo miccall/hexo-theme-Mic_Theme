@@ -254,41 +254,6 @@ keywords提供的网页关键词通常是为搜索引擎分类网页使用的；
 
     ```
 
-## faddy genius 2018-11-06新增
-**导航滚动到顶部固定**
-```
-fixed_nav: true
-```
-**建站时间**
-```
-start_year: 2017
-```
-**文章背景图**
-link: 放图片的文件夹名（需放置在主题文件source文件夹下） 
-number: 图片数量 （如需随机设置背景图 要把图片名称重新命名 例如： 1.jpg 2.jpg ... 12.jpg）
-
-```
-article_img:
-    link: articleImg
-    number: 12
-    now_img_url:
-```
-**更改代码高亮插件**
- https://highlightjs.org/static/demo/   官网预览
-```
-Highlight:
-    enable: true
-    link: obsidian
-```
-**增加valine文章阅读统计**
-```
-visitor: true #是否开启文章统计
-```
-**增加返回顶部按钮**
-
-**修改不蒜子cdn链接**
-
-
 ### 代码高亮
 
 安装组件参阅http://github.com/ele828/hexo-prism-plugin

@@ -49,7 +49,9 @@
 .busuanzi {
 	margin-top: .3rem;
 }
-
+#comment{
+	margin-bottom: 3rem
+}
 /* 设置滚动条的样式*/
 /* 参考https://segmentfault.com/a/1190000003708894*/
 ::-webkit-scrollbar {

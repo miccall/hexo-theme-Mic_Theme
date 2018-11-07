@@ -19,10 +19,10 @@ $(function(){
     var nav_left = $('#nav').offset().left;
     $(document.body).scrollex({
         scroll: function (progress) {
-            if(progress > 0.45){
+            if(progress > 0.2){
                 $('#go_top').fadeIn();
             }
-            if(progress < 0.45){
+            if(progress <= 0.2){
                 $('#go_top').fadeOut();
             }
             if(is_pc && <%= mm %>){

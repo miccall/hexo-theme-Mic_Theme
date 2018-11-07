@@ -87,8 +87,8 @@ comment:
     # 使用 valine 请先执行 npm install valine --save
     valine: # Valine Comment System https://github.com/xCss/Valine
        on: true
-       appId: rvh58le70ghK3xaIOSLmBHTP-gzGzoHsz
-       appKey: W6wDdEmOhX9sNSO8iT4RAyVE
+       appId: 'your id'
+       appKey: 'your key'
        notify: true
        verify: false
        placeholder: Please leave your footprints
