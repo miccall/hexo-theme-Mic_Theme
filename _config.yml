@@ -14,7 +14,7 @@ Intro:
     HeadButton: Faddy Genius
 
 Nav:
-    Home_name: 主页
+    Home_name: Home
     is_use_categories : true 
     categories_name: 分类
     is_use_archives : false
@@ -27,14 +27,14 @@ Nav:
         500px: http://500px.com
         
     pages:
-        简历: 
+        About: 
             link: "/about/"
         团队 :
             link: "/group/"
         图库 :
             link: "/gallery/"
-        标签:
-            link: "/tag/"
+        Tags:
+            link: "/tags/"
         #自定义标签名
         #   link：“路径”
 
@@ -87,8 +87,8 @@ comment:
     # 使用 valine 请先执行 npm install valine --save
     valine: # Valine Comment System https://github.com/xCss/Valine
        on: true
-       appId: 'your id'
-       appKey: 'your key'
+       appId: rvh58le70ghK3xaIOSLmBHTP-gzGzoHsz
+       appKey: W6wDdEmOhX9sNSO8iT4RAyVE
        notify: true
        verify: false
        placeholder: Please leave your footprints

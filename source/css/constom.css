@@ -41,6 +41,9 @@
     background: rgba(225, 225, 225, .1);
     width: 100%
 }
+#copyright {
+	margin-top: 3rem !important;
+}
 #copyright ul li {
 	margin: 0 .3rem;
 	padding: 0;
@@ -52,6 +55,14 @@
 #comment{
 	margin-bottom: 3rem
 }
+
+.pagination a {
+	color: #2cf144!important;
+}
+.pagination span {
+	color: #18C6F8!important;
+}
+
 /* 设置滚动条的样式*/
 /* 参考https://segmentfault.com/a/1190000003708894*/
 ::-webkit-scrollbar {
