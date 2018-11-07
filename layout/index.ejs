@@ -20,13 +20,12 @@
         <div id="main" style="background-color: transparent; padding:0;">
         <section class="link_container" style="margin-top: 0; background-color: transparent; ">
             <div class="link_row">
-                <!-- 文章sample  s-->
-
                 <% page.posts.each(function (post) { %>
+                <% num = parseInt(Math.random()*theme.article_img.number) + 1, img_link = '\/' + theme.article_img.link + '\/' + num + '.jpg' %>
                 <div class="6u 12u(narrower)">
                     <section class="link_box special">
                        <a href="<%- url_for(post.path) %>">
-                        <div class="page_title" style="background-image: url(<%= post.thumbnail %>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                        <div class="page_title" style="background-image: url(<%=img_link%>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
                             <!--标题-->
                             <h2 class="page_title_text"> <%= post.title %> </h2>
                             <!--段落-->
@@ -35,7 +34,14 @@
                         <div class="home-post-info">
                             <!-- Author Avatar -->
                             <div class="home-post-info-author-avatar">
-                                <h6><span class="home-post-info-data"><%- date(post.date, "YYYY-MM-DD") %></span></h6>
+                                <h6>
+                                    <span class="home-post-info-data"><%- date(post.date, "YYYY-MM-DD") %></span>
+                                    <span id="/<%= post.path %>" class="leancloud-visitors" data-flag-title="<%= post.title %>">
+                                        <span class="post-meta-item-text">阅读量 </span>
+                                        <i class="icon fa fa-eye"></i>
+                                        <span class="leancloud-visitors-count">1000000</span>
+                                    </span> 
+                                </h6>
                                 <div class="home-post-info-Category">
                                     <!-- Category -->
                                     <span>

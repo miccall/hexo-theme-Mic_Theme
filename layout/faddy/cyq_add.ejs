@@ -1,0 +1,60 @@
+<script>
+$(function(){
+    //导航
+    var is_pc = true;
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        is_pc = false;
+    }
+    var nav_h = $('#nav').offset().top - $("#nav").height();
+    var nav_left = $('#nav').offset().left;
+    $(document.body).scrollex({
+        scroll: function (progress) {
+            if(progress > 0.45){
+                $('#go_top').fadeIn();
+            }
+            if(progress < 0.45){
+                $('#go_top').fadeOut();
+            }
+            if(is_pc){
+                if($(document).scrollTop() >= nav_h){
+                    if($("#nav").css('position') != 'fixed'){
+                        $('#nav').css({
+                            'position': 'fixed',
+                            'top':'64px',
+                            'left': nav_left,
+                            'width': '100%',
+                            'background': 'rgba(0, 0, 0, 0.8)',
+                        })
+                    }
+                    
+                }
+                if($(document).scrollTop() <= nav_h){
+                    $('#nav').css({
+                        'color': '#fff',
+                        'display':'-moz-flex',
+                        'display':'-webkit-flex',
+                        'display':'-ms-flex',
+                        'position':"relative",
+                        'top':"0",
+                        'left': '0',
+                        '-moz-transition': '-moz-transform 1s ease, opacity 1s ease',
+                        '-webkit-transition': '-webkit-transform 1s ease, opacity 1s ease',
+                        '-ms-transition': '-ms-transform 1s ease, opacity 1s ease',
+                        'transition': 'transform 1s ease, opacity 1s ease',
+                        'background': 'rgba(255, 255, 255, 0.175)',
+                        'height': '4rem',
+                        'line-height': '4rem',
+                        'margin': '-4rem auto 0 auto',
+                        'padding': '0 2rem 0 0',
+                        'position': 'relative',
+                        'max-width': '72rem',
+                        'z-index': '5',
+                    })
+                }
+            }
+            
+        }
+    })
+
+})
+</script>

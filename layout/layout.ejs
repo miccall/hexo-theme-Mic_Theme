@@ -17,5 +17,11 @@
         
     <% } else { %>
 		<%- body %>
- 	<% } %>
+		<i id="go_top" class="icon fa-angle-up"></i>
+	<% } %>
+	<script src="/Highlight/highlight.pack.js"></script>
+	 
+	<%- partial('_widget/comment/valine/main', {}, {cache: true}) %>
+	<%- partial('_widget/fixed_nav', {mm: theme.fixed_nav}, {cache: true}) %>
+	 <script src="/js/custom/custom.js"></script>
 </html>

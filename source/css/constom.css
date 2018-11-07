@@ -1,0 +1,70 @@
+#go_top {
+	display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+	font-size: 30px;
+    line-height: 5px;
+    padding: 10px 8px 13px;
+    cursor: pointer;
+    color: #fff;
+	border-radius: 3px;
+    background-image: linear-gradient(120deg, #e14fad 0%, #f9d423 100%);
+    z-index: 99999;
+}
+#go_top:hover{
+    color: #18C6F8;
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+/* 阅读量等 */
+.icons_parent {
+    overflow: hidden;
+}
+.leancloud-visitors{
+	float: right;
+	margin-right: 1rem;
+}
+.leancloud-visitors i{
+	margin: 0 .15rem;
+}
+/* 阅读量等end */
+/* 隐藏评论valine 的版本号 */
+.power.txt-right{
+    display: none
+}
+
+/*页脚*/
+#copyright {
+    margin: auto auto auto auto !important;
+    padding: 4rem 0;
+    color: #999;
+    background: rgba(225, 225, 225, .1);
+    width: 100%
+}
+#copyright ul li {
+	margin: 0 .3rem;
+	padding: 0;
+	border: none;
+}
+.busuanzi {
+	margin-top: .3rem;
+}
+
+/* 设置滚动条的样式*/
+/* 参考https://segmentfault.com/a/1190000003708894*/
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	background: #eee;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(247, 149, 51);
+}
