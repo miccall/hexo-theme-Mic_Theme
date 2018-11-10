@@ -5,16 +5,16 @@
 # Head info
 head:
     favicon: "/img/logo_miccall.png"
-    keywords: miccall
+    keywords: Faddy Genius
     backgroundpic : "img/bg.jpg"
 
 Intro:
-    name: MICCALL
+    name: Faddy Genius
     slogan: "Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way"
-    HeadButton: MICCALL
+    HeadButton: Faddy Genius
 
 Nav:
-    Home_name: 主页
+    Home_name: Home
     is_use_categories : true 
     categories_name: 分类
     is_use_archives : false
@@ -27,19 +27,19 @@ Nav:
         500px: http://500px.com
         
     pages:
-        简历: 
+        About: 
             link: "/about/"
         团队 :
             link: "/group/"
         图库 :
             link: "/gallery/"
-        标签:
-            link: "/tag/"
+        Tags:
+            link: "/tags/"
         #自定义标签名
         #   link：“路径”
 
 MainFirst:
-    name: Miccall Metro
+    name: Faddy Genius
     description: Technical  Artist  of  Games   
     pic_url: /images/me.jpg
     goto_ulr: ""
@@ -47,15 +47,28 @@ MainFirst:
 Gallery :
     title: Mr.metro 
     description: Just another fine responsive 
+# link: 放图片的文件夹名（需放置在主题文件source文件夹下） 
+# number: 图片数量 （如需随机设置背景图 要把图片名称重新命名 例如： 1.jpg 2.jpg ... 12.jpg）
+article_img:
+    link: articleImg
+    number: 12
+    now_img_url:
 
+# 滚动页面导航是否固定到顶部 
+fixed_nav: true
+# 建站时间
+start_year: 2016
 # ---------------------------------------------------------------
 # Style Settings
 # ---------------------------------------------------------------
 
 # Custom code Render System 自定义代码渲染 
-# default dark funky okaidia twilight coy solarized  可选项  
-# link to review : http://prismjs.com/index.html   官网预览
-prism: coy
+# xt256 obsidian monokai isbl-editor-dark idea googlecode github-gist dracula codepen-embed atom-one-dark atom-one-light atelier-dune-dark 优选项
+# 比较特殊 brown-paper
+# link to review : https://highlightjs.org/static/demo/   官网预览
+Highlight:
+    enable: true
+    link: obsidian
 
 # Custom Fonts
 fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "FZLTCXHJW", Arial, sans-serif
@@ -64,7 +77,7 @@ fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB"
 # Available value of "use":
 #     duoshuo | disqus | disqus_click | changyan
 comment:
-    use: disqus_click
+    use: valine
     shortname: http-miccall-tech 
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
@@ -74,14 +87,15 @@ comment:
     # 使用 valine 请先执行 npm install valine --save
     valine: # Valine Comment System https://github.com/xCss/Valine
        on: true
-       appId: 'your appId'
-       appKey: 'your appkey'
+       appId: rvh58le70ghK3xaIOSLmBHTP-gzGzoHsz
+       appKey: W6wDdEmOhX9sNSO8iT4RAyVE
        notify: true
        verify: false
        placeholder: Please leave your footprints
        avatar: ''
        avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
        pageSize: 10 # comments of one page
+       visitor: true #是否开启文章统计
 
 # Search Systems
 # Available value:

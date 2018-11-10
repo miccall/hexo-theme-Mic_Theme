@@ -6,12 +6,23 @@
     <link rel="stylesheet" href="<%- config.root %>css/mic_main.css" />
     <link rel="stylesheet" href="<%- config.root %>css/dropdownMenu.css" />
     <meta name="keywords" content="<%- theme.head.keywords %>" />
-    <% if (theme.busuanzi.enable === true ) {%>
-    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	 <% } %>
+    <% if (theme.busuanzi.enable) {%>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <% } %>
+    <% if (theme.comment.on) {%>
+        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <% } %> 
     <noscript>
         <link rel="stylesheet" href="<%- config.root %>css/noscript.css" />
     </noscript>
+    <% if(theme.Highlight.enable){ %>
+        <!-- <link rel="stylesheet" href="/Highlight/styles/<%=theme.Highlight.link%>.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" />
+        
+    <% } %>
+    <link rel="stylesheet" href="/css/constom.css">
+
     <style type="text/css">
         body:before {
           content: ' ';

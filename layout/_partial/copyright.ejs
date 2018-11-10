@@ -1,11 +1,19 @@
-        <div id="copyright">
+        <div id="copyright" style="max-width: 100%;">
             <ul>
-                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>&copy;<%= theme.start_year %> - <%- date(Date.now(), 'YYYY') %></li>
                 <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
             </ul>
-            <% if(theme.busuanzi.enable === true ) { %>
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+            <% if(theme.busuanzi.enable) { %>
+                <div class="busuanzi">
+                    <span id="busuanzi_container_site_pv">
+                        <i class="icon fa fa-eye"></i>&nbsp; <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                    &nbsp;&nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        <i class="icon fa fa-user"></i>&nbsp; <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                </div>
 			<% } else { %>
-				<span id="busuanzi_container_site_pv"> <%- date(Date.now(), 'YYYY') %> </span> 
+				<span> <%- date(Date.now(), 'YYYY') %> </span> 
 			<% } %>
         </div>

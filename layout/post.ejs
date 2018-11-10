@@ -16,7 +16,6 @@
 
 
 <!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_<%= theme.prism %>.css" />
 <link rel="stylesheet" href="/css/typo.css" />
 <!-- 文章页 -->
 <body class="is-loading">
@@ -30,17 +29,37 @@
         <%- partial('_partial/nav' , {}, {cache: true}) %>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(<%= page.thumbnail %>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+         <% num = parseInt(Math.random()*theme.article_img.number) + 1, img_link = '\/' + theme.article_img.link + '\/' + num + '.jpg' %>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(<%=img_link%>);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ><%= page.title %></h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
+             <% if(page.layout == 'about'){ %>
+                
+            <% }else{ %>
+                <div class="icons_parent">
+                    <span class="home-post-info-data">
+                        <i class="icon fa fa-calendar" style="margin-right:.15rem"></i>
+                        <%- date(page.date, "YYYY-MM-DD") %>
+                    </span>
+                    <!-- 阅读量 -->
+                    <span id="/<%= page.path %>" class="leancloud-visitors" data-flag-title="<%= page.title %>">
+                            <em class="post-meta-item-text">阅读量 </em>
+                            <i class="icon fa fa-eye"></i>
+                            <span class="leancloud-visitors-count">10000</span>
+                    </span>
+                </div>
+            <%} %>
                 <%-page.content%>
             </div>
 
             <!-- Post Comments -->
-            <%- partial('_partial/comment') %>
-
+            <% if(page.layout == 'about'){ %>
+                
+            <% }else{ %>
+                <%- partial('_partial/comment') %>
+            <%} %>
         </div>
         <!-- Copyright 版权 start -->
         <%- partial('_partial/copyright', {}, {cache: true} ) %>
